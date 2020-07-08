@@ -1,6 +1,0 @@
-"0","alive <- subset(med, (!is.na(DischargedQ) | !is.na(DateOfDischarge)))"
-"0","alive <- alive[,c(""Age"",""Sex"",""DischargedQ"",""DateOfDischarge"")]"
-"0","ggplotly(ggplot(data=alive, aes("" "", Age)) + geom_boxplot(color='black', fill = '#10AB05') +"
-"0","  stat_summary(fun=mean, colour=""darkred"", geom=""point"", shape=18, size=3,show.legend  = FALSE) +"
-"0","  theme_bw()+"
-"0","  ggtitle(""Analyzing age group who are Likely to Recover ""))"

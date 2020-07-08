@@ -1,3 +1,0 @@
-"0","ggplotly(ggplot(med, aes(Age, fill=factor(Sex)))+geom_histogram(binwidth = 5,color = 'black')+ theme_bw() "
-"0","               + scale_color_brewer(palette = ""Dark2"")"
-"0","               + scale_fill_brewer(palette = ""Dark2""))"

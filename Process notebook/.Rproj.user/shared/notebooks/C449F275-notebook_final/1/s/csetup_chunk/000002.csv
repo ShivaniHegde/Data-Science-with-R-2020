@@ -1,3 +1,0 @@
-"0","chooseCRANmirror(graphics=FALSE, ind=1)"
-"0","knitr::opts_chunk$set(echo = TRUE)"
-"0","source(""scripts/package_installer.R"")"

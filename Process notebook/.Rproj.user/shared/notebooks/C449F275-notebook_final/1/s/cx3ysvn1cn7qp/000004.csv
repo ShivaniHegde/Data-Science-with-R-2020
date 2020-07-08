@@ -1,6 +1,0 @@
-"0","fig <- ggplot(data_and_forecast)+ "
-"0","      geom_line(aes(x = dates, y = cases, color =label))+"
-"0","      geom_point(aes(x = dates, y = cases, color =label))+"
-"0","      scale_color_manual(values=c(""blue"", ""red"")) +"
-"0","      theme_minimal()"
-"0","ggplotly(fig)"

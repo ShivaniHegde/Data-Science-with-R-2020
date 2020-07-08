@@ -1,3 +1,0 @@
-"0","arima_model <- auto.arima(data_ts)"
-"0","forecast_arima = forecast::forecast(arima_model, h=days_to_predict)"
-"0","forecast_arima = as.data.frame(as.data.frame(forecast_arima)$`Point Forecast`)"
