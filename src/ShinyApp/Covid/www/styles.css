@@ -285,6 +285,23 @@ border-bottom: 2px solid #337ab7;
     justify-content: center;
 }
 
+.dataset-content {
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.data-link{
+  border:1px solid white;
+  border-radius: 5px;
+  padding:10px;
+  margin:10px;
+}
+
+.data-link>a {
+    display: block;
+}
+
 .references-content{
   overflow:auto;
 }

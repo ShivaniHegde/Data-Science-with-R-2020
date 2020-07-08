@@ -348,27 +348,27 @@ Analysing the different age groups since the risk of dying from the infection, a
                                              fluidRow(class = "final-analysis-content",
                                                       tags$p("Our overall goal was to exploit the sample patient dataset. Each observation of the dataset is related to the details of the confirmed COVID-19 patient such as age, DatOfOnsetSymptoms , DateOfDischarge etc.
 Among 15466 observations, 6006 (38.83%)are Females and 9460 (61.17%) are Males. 766(4.95%) are 18 and below, 12059(77.97%) are between 20 and 60 inclusive, 2641(17.07%) above 60. The low count of children suggests that there is a relatively low attack rate in this age group. The median age is 45  years (range 1 year-100 years old; IQR 38-53 years old) with the majority of cases aged between 16–75 years."
-                                                             ),
+                                                      ),
                                                       tags$p("Individuals with higher risk for severe disease and death include those with some underlying medical conditions such as hypertension, diabetes, cardiovascular disease, chronic respiratory disease and cancer. Our sample consists of 720(4.6%) patients with chronic diseases out of which 302(41.94%) are Female and 418(58.06%) are Male. Additionally, extracting each chronic disease from 149 observations(excluding missing values) and plotting its frequency showed us that people with hypertension(34.7%)and diabetes(24.3%) are more vulnerable to COVID-19."
-                                                             ),
+                                                      ),
                                                       tags$p("Since people with chronic disease are likely to face an increased risk of developing severe symptoms and eventually die, we try to find the chances of their recovery and also compare it with those who don’t. The recovery:death ratio for patients with chronic disease is 17:49 and for the others is 53:8. This indeed proves that people having chronic disease, when infected by COVID19 have very low chances of recovery."
-                                                             ),
+                                                      ),
                                                       tags$p("
 Based on 1644 confirmed cases (excluding observations with missing values for Symptoms)  collected until March 2020, typical signs and symptoms include: Fever (32.65%), Dry Cough(18.38%), sore throat,(3.76%) pneumonia (3.5%), fatigue(2.5%), malaise(2.5%), rhinorrhea(2.3%), headache(2.23%), myalgias(2.22%), shortness of breath(1.9%), sputum(1.5%) etc. Focusing on Wuhan City, we plot a pie chart to see the initially seen symptoms. "
-                                                             ),
+                                                      ),
                                                       tags$p("Fever was seen in the majority of the cases (44.4%) on its own as well as with other symptoms like cough(28.1%), weakness(2.96%), sore throat(2.96%) and fatigue(2.96%).The outbreak soon spread from China to other parts of the world. We use the geographical locations of the patients  provided in our dataset to find the places that were affected or not affected from COVID-19. The map reveals that the virus was spread from Chinese city of Wuhan to more than 180 countries and territories affecting every continent except Antarctica. In addition to chronic disease, age also influences  the level of risk for disease and death.People aged more than 60 are at a higher risk than those below 60 can be concluded with the help of the statistical hypothesis testing such as t-test. Creating a separate data frame of those who recovered (372 observations) , we create a boxplot that shows the median age as 45 (IQR 30-53) and also the average age to be 43.29.  We then create another data frame of those who died and created a boxplot. The median in this plot is 67 (IQR 55-79)."
-                                                             ),
+                                                      ),
                                                       tags$p("According to WHO, the recovery time tends to be about two weeks for those with mild symptoms and about 3-6 weeks for those with severe or critical disease. However, these seem to be only rough guidelines as studies have already shown a number of exceptions. We plot the timeline for recovery for some patients and see variations in the number of days taken for recovery. With this, we can conclude that a window of 2-4 weeks can be considered as recovery time. Similarly, we plot the timeline for death for some patients. In this case, most of the patients died within 3 weeks whereas the majority of the patients older than 70 took less than 2 weeks.These are analysis that we have made on the COVID-19 patient medical data."
-                                                             )        
+                                                      )        
                                              )
                                     ),
                                     tabPanel("Time Series Prediction",
                                              fluidRow(class = "final-analysis-content",
                                                       tags$p("We need to know that no prediction is certain as long as once in a while the past repeats. There are different factors that come into play while doing the prediction such as psychological which emphasizes more on how people distinguish and react in a dangerous situation, availability of data and the variable used. Assuming that the information used is reliable which in future will follow the past trends of the disease, our forecasts say that there will be an increment within the confirmed COVID-19 cases ( deaths and recovered ) with a slight instability."
-                                                             ),
+                                                      ),
                                                       tags$p("We can see that in Germany the restrictions have taken important steps towards the containment of the virus. This has led to fewer deaths and confirmed cases, as for example in the US.  
 It is interesting to note that the strict Spanish restrictions on the virus have made only a small difference to the less stringent restrictions in Germany (confirmed cases)."
-                                                             )
+                                                      )
                                              )
                                     ),
                                     tabPanel("Twitter Analysis",
@@ -377,7 +377,7 @@ It is interesting to note that the strict Spanish restrictions on the virus have
 expressed emotions during the pandemic. When analyzed the frequent words used to express sentiments, it is found that \"ugh\", \"die\", \"miss\" , \"sue\", \"worse\" are the words used frequently to express negative sentiment while, \"good\", \"trump\", \"love\", \"hug\", \"wow\" are the words used for positive sentiment."
                                                       ),
                                                       tags$p("When analyzed the word cloud for German tweets, we could identify some of the words like \"schon\", \"deutschland\", \"pandamie\", \"lockdown\", \"youtube\" etc have been used frequently in the tweets."
-                                                              )
+                                                      )
                                              )
                                              
                                     )
@@ -403,10 +403,17 @@ expressed emotions during the pandemic. When analyzed the frequent words used to
                                              )
                                     ),
                                     tabPanel("Datasets",
-                                             fluidRow(class = "resources-content",
-                                                      tags$a( href="https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases", target="_blank",
-                                                              "John Hopkins timeseries datasets"
-                                                      ) 
+                                             fluidRow(class = "dataset-content",
+                                                      tags$div( class= "data-link",
+                                                                tags$a( href="https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases", target="_blank",
+                                                                        "John Hopkins timeseries datasets"
+                                                                )
+                                                      ),
+                                                      tags$div( class= "data-link",
+                                                                tags$a( href="https://datarepository.wolframcloud.com/resources/Patient-Medical-Data-for-Novel-Coronavirus-COVID-19", target="_blank",
+                                                                        "Patient Medical Dataset"       
+                                                                )
+                                                      )
                                              )
                                              
                                     ),
