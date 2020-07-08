@@ -1,0 +1,7 @@
+"0","library(timelineS)"
+"0","time.df <- subset(med, !is.na(med$Age)  & !is.na(med$DateOfOnsetSymptoms)"
+"0","                  & (!is.na(med$DateOfDeath) | !is.na(med$DateOfDischarge)))"
+"0","time.df <- time.df[,c(""Age"",""DateOfOnsetSymptoms"",""DateOfDeath"",""DateOfDischarge"")]"
+"0","discharge.days <- durCalc(time.df, start=""DateOfOnsetSymptoms"", end=""DateOfDischarge"",timeunit = 'days')"
+"0","discharge.days <- discharge.days[,c(""Age"",""days"")]"
+"0","ggplotly(ggplot(discharge.days, aes(days, Age))+ geom_point(aes(color=Age),size = 2) + scale_color_gradientn(colors = c(""#00AFBB"", ""#E7B800"", ""#FC4E07""))+ theme_bw() +ggtitle(""Days between Onset Symptoms and Discharge""))"

@@ -1,0 +1,2 @@
+"0","true.chron <- subset(med, med$ChronicDiseaseQ=='True')"
+"0","ggplotly(ggplot(true.chron, aes(Age, fill = factor(Sex)))+ geom_histogram(binwidth = 10, color = 'black')+ facet_wrap(~Sex) + theme_bw() )"

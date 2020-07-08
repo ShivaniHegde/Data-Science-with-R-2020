@@ -1,0 +1,8 @@
+"0",""
+"0","  #mean time (in days) for death"
+"0","  death.days <-durCalc(time.df, start=""DateOfOnsetSymptoms"", end=""DateOfDeath"",timeunit = 'days')"
+"0","  death.days <- death.days[,c(""Age"",""days"")]"
+"0","  ggplotly(ggplot(death.days, aes(days, Age))+ geom_point(aes(color=Age),size = 2) +"
+"0","                    scale_color_gradientn(colors = c(""#00AFBB"", ""#E7B800"", ""#FC4E07"")) +"
+"0","                    theme_bw() +"
+"0","                    ggtitle(""Days between date of onset of symptoms and date of death""))"

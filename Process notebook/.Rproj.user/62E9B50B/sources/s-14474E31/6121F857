@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1594241735727.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "6121F857",
+    "lastKnownWriteTime" : 1594242691,
+    "last_content_update" : 1594242716391,
+    "path" : "D:/DSc R/finalSubmission/Process notebook/notebook_final.Rmd",
+    "project_path" : "notebook_final.Rmd",
+    "properties" : {
+        "cursorPosition" : "203,10",
+        "last_setup_crc32" : "",
+        "scrollLine" : "190"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

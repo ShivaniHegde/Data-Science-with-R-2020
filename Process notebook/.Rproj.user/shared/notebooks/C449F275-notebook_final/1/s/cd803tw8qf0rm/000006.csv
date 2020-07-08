@@ -1,0 +1,6 @@
+"0","dead <- subset(med, !is.na(med$Age) & !is.na(med$Sex) & !is.na(med$DeathQ))"
+"0","dead <- dead[,c(""Age"",""Sex"",""DeathQ"")]"
+"0","ggplotly(ggplot(data=dead, aes("" "", Age)) + geom_boxplot(color='black', fill = '#3BA6E5') +"
+"0","  stat_summary(fun=mean, colour=""darkred"", geom=""point"", shape=18, size=3,show.legend  = FALSE) +"
+"0","  theme_bw() +"
+"0","  ggtitle(""Analysis Age group who are Unlikely to Recover""))"

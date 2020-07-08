@@ -1,0 +1,6 @@
+"0","jc <- john_confirmed %>% filter(Country.Region == country) %>% dplyr::select(c(-1,-2,-3,-4)) %>% colSums()"
+"0","jr <- john_recovered %>% filter(Country.Region == country) %>% dplyr::select(c(-1,-2,-3,-4)) %>% colSums()"
+"0","jd <- john_deaths %>% filter(Country.Region == country) %>% dplyr::select(c(-1,-2,-3,-4)) %>% colSums()"
+"0","ja <- jc-jr-jd"
+"0","john_selected <- as.data.frame(t(rbind(jc,jr,jd,ja)))"
+"0","colnames(john_selected) <- c(""confirmed"", ""recovered"", ""dead"", ""active"")"
