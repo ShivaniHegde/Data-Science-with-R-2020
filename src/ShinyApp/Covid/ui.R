@@ -390,14 +390,14 @@ expressed emotions during the pandemic. When analyzed the frequent words used to
                                     
                                     tabPanel("R Markdown process notebook",
                                              fluidRow(class = "resources-content",
-                                                      tags$a( href = "https://github.com/Farhaan900/covid19-analysisAndPredictions/tree/master", target="_blank",
+                                                      tags$a( href = "https://shivanihegde.github.io/Data-Science-with-R-2020/Process%20notebook/notebook_final.html", target="_blank",
                                                               tags$img( id = "r-logo", src="R-logo.png")
                                                       )
                                              )
                                     ),
                                     tabPanel("Source Code",
                                              fluidRow(class = "resources-content",
-                                                      tags$a( href = "https://github.com/Farhaan900/covid19-analysisAndPredictions/tree/master", target="_blank",
+                                                      tags$a( href = "https://github.com/ShivaniHegde/Data-Science-with-R-2020", target="_blank",
                                                               tags$img( id = "git-logo", src="git-logo.png")
                                                       )
                                              )
