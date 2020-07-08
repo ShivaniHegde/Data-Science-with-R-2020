@@ -17,3 +17,5 @@ Twitter Data: using tritteR and rtweet libraries
 URL Website: https://mohammed-shaikh.shinyapps.io/Covid/
 
 URL Screencast: https://youtu.be/DhgDT_I-Ogg
+
+URL Process notebook: https://shivanihegde.github.io/Data-Science-with-R-2020/Process%20notebook/notebook_final.html
